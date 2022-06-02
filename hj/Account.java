@@ -2,9 +2,13 @@ package TeamprojectThird;
 
 public class Account {
 
-    private Stock[] ac = new Stock[SIZE];
+    private TeamprojectThird.Stock[] ac = new TeamprojectThird.Stock[SIZE];
     
     public static final int SIZE = 10;
+
+    public stock(){
+
+    }
 
     public Account() {
         ac[0] = new Stock("에너지 ETF", 15.6, 15000, 12, 12);
