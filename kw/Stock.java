@@ -1,4 +1,4 @@
-package TeamprojectThird.kw;
+package javateamproject.javaTeamproject03.kw;
 
 public class Stock {
     private String stockName; // 주식이름
@@ -41,4 +41,11 @@ public class Stock {
         this.price = price;
     }
 
+    public int getPieces() {
+        return pieces;
+    }
+
+    public void setPieces(int pieces) {
+        this.pieces = pieces;
+    }
 }

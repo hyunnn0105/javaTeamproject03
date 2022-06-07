@@ -1,5 +1,7 @@
 package TeamprojectThird.kw;
 
+import javateamproject.javaTeamproject03.kw.Stock;
+
 public class Account {
     private Stock[] ac =  new Stock[SIZE];
 

@@ -1,4 +1,4 @@
-package TeamprojectThird;
+package javateamproject.javaTeamproject03.hj;
 
 public class Stock {
     private String username;

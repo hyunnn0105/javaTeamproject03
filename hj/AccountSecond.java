@@ -1,16 +1,13 @@
-package TeamprojectThird;
+package javateamproject.javaTeamproject03.hj;
 
-public class Account {
+public class AccountSecond {
 
-    private TeamprojectThird.Stock[] ac = new TeamprojectThird.Stock[SIZE];
-    
-    public static final int SIZE = 10;
+    private Stock[] ac = new Stock[5];
+    private int Num = 5;
 
-    public stock(){
+//    public static final int SIZE = 10;
 
-    }
-
-    public Account() {
+    public AccountSecond() {
         ac[0] = new Stock("에너지 ETF", 15.6, 15000, 12, 12);
         ac[1] = new Stock("비트코인 ETF", 15.6, 15000, 55,90);
         ac[2] = new Stock("메타버스 ETF", 15.6, 15000, 33,50);
@@ -28,7 +25,7 @@ public class Account {
     }
 
     // 보유 주식 리턴
-    public Stock[] printAll() {
+    public Stock1[] printAll() {
         return ac;
     }
 
@@ -57,11 +54,33 @@ public class Account {
 
     // game 시행 횟수 구하기
     /*
-    int total = 0;
-    while(total < 5) {
-        // total 위치는 turn 변경 시점 == 등락폭 5번 보기
-        total++;
+    int total = 5;
+    while(total > 5) {
+        // total 위치는 turn 변경 시점 == printAll() 호출 5번?
+        total--;
     }
 
      */
+
+    // 데이반복 ->
+
+    public void finish(){
+        if(this.Num > 0) {
+            this.Num--;
+        } else {
+            endgame();
+        }
+    }
+
+    private void endgame() {
+        printAll();
+    }
+
+    public int getNum() {
+        return Num;
+    }
+
+    public void setNum(int num) {
+        Num = num;
+    }
 }
