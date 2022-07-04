@@ -1,20 +1,26 @@
-package javateamproject.javaTeamproject03.kw;
+package stockjoin;
 
 public class Stock {
+
     private String stockName; // 주식이름
-    private double updownRate; // 등락률
+
     private double price ; // 가격 ,
     private int pieces ; // 갯수
 
 
+    // 생성자
     public Stock() {
+
     }
 
-    public Stock(String stockName, double updownRate, double price, int pieces) {
+    public Stock(String stockName, double price, int pieces) {
         this.stockName = stockName;
-        this.updownRate = updownRate;
         this.price = price;
         this.pieces = pieces;
+    }
+
+    public String informStock(){
+        return String.format("%s %.1f %d",stockName, price, pieces );
     }
 
     public String getStockName() {
@@ -23,14 +29,6 @@ public class Stock {
 
     public void setStockName(String stockName) {
         this.stockName = stockName;
-    }
-
-    public double getUpdownRate() {
-        return updownRate;
-    }
-
-    public void setUpdownRate(double updownRate) {
-        this.updownRate = updownRate;
     }
 
     public double getPrice() {
